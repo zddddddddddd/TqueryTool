@@ -1,0 +1,54 @@
+{
+  "name": "@dune2/tools",
+  "version": "0.3.9",
+  "description": "",
+  "keywords": [
+    "i18n"
+  ],
+  "license": "ISC",
+  "author": "",
+  "exports": {
+    "./factory/*": "./factory/*.tsx",
+    "./i18n": "./i18n/index.ts",
+    "./numbro": "./numbro/index.ts",
+    "./rq": "./rq/index.ts",
+    "./shared": "./shared/index.ts",
+    "./storage": "./storage/index.ts",
+    "./storage/*": "./storage/*.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "i18n",
+    "numbro",
+    "rq",
+    "factory",
+    "storage",
+    "shared"
+  ],
+  "dependencies": {
+    "@lingui/core": "^4.4.0",
+    "@lingui/detect-locale": "^4.4.0",
+    "@lingui/react": "^4.4.0",
+    "@messageformat/parser": "^5",
+    "@types/js-cookie": "3.0.3",
+    "bignumber.js": "^9.1.1",
+    "js-cookie": "^3.0.5",
+    "store2": "^2.14.2"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^4.36.1",
+    "@types/react": "^18.2.6",
+    "axios": "^0.27.2",
+    "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --diagnostics",
+    "test": "vitest run",
+    "test:u": "vitest -u",
+    "typecheck": "vitest typecheck"
+  }
+}
