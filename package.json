@@ -1,6 +1,6 @@
 {
-  "name": "@tquery/tquery-tool",
-  "version": "0.3.9",
+  "name": "tquery-tool",
+  "version": "0.1.0",
   "description": "",
   "keywords": [
     "i18n"
